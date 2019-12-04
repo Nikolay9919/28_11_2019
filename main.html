@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Unichain
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+
+<body onload="checkForuserSession()" onabort="">
+    <div id="content">
+        <span class="slide">
+        <a href="#" onclick="openSlideMenu()">
+          <i class="fas fa-bars"></i>
+        </a>
+        <div class="list-group">
+            <div id="wallet-transaction-panel"></div>
+        </div>
+           
+
+        </span>
+        <div id="menu" class="nav">
+            <a href="#" class="close" onclick="closeSlideMenu()">
+                <i class="fas fa-times"></i>
+            </a>
+            <ul>
+                <li onclick="showFirtsCoin()"><a href="#">FirstCoin</a></li>
+                <li onclick="showSecondCoin()"><a href="#">SecondCoin</a></li>
+                <li onclick="showThirdCoin()"><a href="#">ThirdCoin</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <input type="number" id="money">
+            <button id="sendMoney">Send</button>
+        </div>
+
+    </div>
+</body>
+
+<script src="./main_page.js"></script>
+
+</html>
